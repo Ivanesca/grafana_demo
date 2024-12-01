@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  metrics:
+    enable:
+      all: true
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: info
